@@ -14,7 +14,6 @@ function VotePage() {
   const navigate = useNavigate();
 
   const epicId = location.state?.epicId;
-  const dob = location.state?.dob;
 
   useEffect(() => {
     if (!epicId) {
@@ -22,7 +21,7 @@ function VotePage() {
       return;
     }
     fetchElections();
-  }, []);
+  }, [epicId, navigate]);
 
   async function fetchElections() {
     const snapshot = await getDocs(collection(db, "elections"));
