@@ -48,7 +48,7 @@ Run the development server:
 npm start
 ```
 
-Open http://localhost:3000 in your browser.
+Open the live application at https://voter-live.netlify.app/ or run the project locally and open http://localhost:3000 in your browser.
 
 ## 📷 Project Preview
 
